@@ -1,0 +1,11 @@
+/* this class is applied to the Footer of the website, this is used so that it creats the style 
+and look for the footer so it not just words at the bottom of the webpage but instead have a look to it */
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}

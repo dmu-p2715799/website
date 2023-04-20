@@ -1,0 +1,121 @@
+{
+    padding: 0;
+    margin; 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* this class is applied to the Hero image to help it fit 
+into the webpage, this is so that it does not just become the background
+image for the whole site and will just stick to a persiffic area*/
+#hero{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), 
+        url("image/background.jpeg");
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+}
+#hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(80, 17, 111);
+    background-color: transparent;
+    border: 2px solid rgb(52, 5, 14);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+    transition-property: background-color, color;
+}
+#hero .cta:hover {
+    color: rgb(8, 241, 97);
+    background-color: azure;
+}
+
+#service{}
+#service .service{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1000;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#service .service-title{
+    font-size: 3rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: auto;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+#service .service-top p {
+    font-size: 1.4rem;
+    margin: 5px;
+    line-height: 2rem;
+    font-weight: 200px;
+    letter-spacing: .05rem;
+}
+#service .service-item {
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 50px;
+}
+#service .service-item h2{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+/* this class is applied to the Footer of the website, this is used so that it creats the style 
+and look for the footer so it not just words at the bottom of the webpage but instead have a look to it */
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+/* this is the header class, this is used to create the banner that goes across the homepage of the website*/
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header {
+	min-height: 8vh;
+	background-color: rgba(31, 30, 30, 0.24);
+	transition: 0.3s ease background-color;
+}
